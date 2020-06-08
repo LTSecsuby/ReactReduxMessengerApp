@@ -1,0 +1,30 @@
+.blockContent {
+    display: grid;
+    grid-template-areas:
+            "userBar userContent otherContent"
+            "userPostInput userPostInput userPostInput";
+    grid-template-columns: minmax(360px, 1fr) 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+    margin: 0;
+}
+
+.userBar {
+    grid-area: userBar;
+    background-color: #66c8ff;
+}
+
+.userContent {
+    grid-area: userContent;
+    background-color: #cededb;
+}
+
+.otherContent {
+    grid-area: otherContent;
+    background-color: #cededb;
+}
+
+.userPostInput {
+    grid-area: userPostInput;
+    background-color: #8cdaa5;
+}
