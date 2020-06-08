@@ -5,9 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
-import ReducerPostPage from "./components/posts/ReducerPostPage";
 import thunk from "redux-thunk";
-import ReducerUserPage from "./components/users/ReducerUserPage";
 import ReducerRegistrationPage from "./components/registration/ReducerRegistrationPage";
 import ReducerAuthorizationPage from "./components/authorization/ReducerAuthorizationPage";
 import ReducerRequestFriendsPage from "./components/send-friend-request/ReducerRequestFriendsPage";
@@ -15,8 +13,6 @@ import ReducerNewFriendPage from "./components/new-friend-form/ReducerNewFriendP
 import ReducerFriendsListPage from "./components/friends-list/ReducerFriendsListPage";
 
 let reducers = combineReducers({
-    postPageState: ReducerPostPage,
-    userPageState: ReducerUserPage,
     registrationPageState: ReducerRegistrationPage,
     authorizationPageState: ReducerAuthorizationPage,
     requestFriendsPageState: ReducerRequestFriendsPage,
